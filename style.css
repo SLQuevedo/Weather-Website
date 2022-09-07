@@ -1,0 +1,94 @@
+body{
+    background-image: url("https://3s81si1s5ygj3mzby34dq6qf-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/ab_multi-cloud.jpg");
+    height: 750px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.box{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding: 10px 30px 10px;
+    color: orange;
+    background-color: bisque;
+}
+
+.navbar {
+    font-size: 20px;
+    max-height: 50px;
+    background-color: bisque;
+  }
+  
+  .navigation .navbar-brand {
+    margin-left: 0px;
+    padding: inherit;
+    font-weight: bold;
+    color: bisque;
+    font-family: cochin;
+    
+  }
+
+  .nav-link{
+    color: #8f8f89;
+  }
+
+  .active, .dropdown-menu .dropdown-item:active, a:hover {
+    background-color: orange;
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: orange;
+  }
+  
+  .nav-link:hover .navbar-brand:hover{
+    background-color:orange;
+  }
+
+  .title{
+    font-size: 20px;
+  }
+  .active, .panel:hover {
+    border-color: orange;
+    border-style: solid;
+    
+  }
+   
+  img {
+    width:100%;
+    height:100%;
+  }
+
+  .vizualizations {
+    width:50%;
+    height:50%;
+  }
+
+  @media(max-width: 992px) {
+    .navbar-expand-lg {
+    background-color: orange;
+    }
+    .navbar {
+      max-height: none;
+      padding: inherit;
+    }
+    .navbar div {
+      margin: inherit;
+      background-color: orange;
+    }
+    .navbar-brand {
+      padding: 10px;
+    }
+    button{
+      margin-right: 30px;
+
+    }
+    button:focus {
+      outline: 1px dotted;
+      outline: auto 5px;
+    }
+  }

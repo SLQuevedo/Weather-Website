@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Analysis</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navigation">
+    <nav class="navbar navbar-expand">
+      <a class="navbar-brand" style="background-color: orange" href="index.html"> LATITUDE</a>
+      <button class = "navbar-toggler" data-toggle = "collapse" data-target = "#collapsibleNavBar" type = "button" aria-controls = "navbarNavDropdown" aria-expanded = "false" aria-label = "Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class = "collapse navbar-collapse" id="collapsibleNavBar">
+        <ul class = "navbar-nav ml-auto">
+            <li class = "nav-item dropdown">
+              <a class = "nav-link dropdown-toggle" href = "#" id= "navbarDropdownMenuLink" data-toggle = "dropdown" role= "button" aria-haspopup = "true" aria-expanded = "false">PLOTS</a>
+              <div class = "dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class = "dropdown-item" href = "visualizations/cloudiness.html">Cloudiness</a>
+                <a class = "dropdown-item" href = "visualizations/humidity.html">Humidity</a>
+                <a class = "dropdown-item" href = "visualizations/maxtemp.html">Temperature</a>
+                <a class = "dropdown-item" href = "visualizations/windspeed.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class = "nav-item">
+              <a class="nav-link" href="visualizations/data.html"> DATA</a>
+            </li>
+            <li class = "nav-item">
+              <a class="nav-link" href="visualizations/comparisons.html"> COMPARISON</a>
+            </li>
+            <li class = "nav-item">
+              <a class="nav-link" href="https://github.com/SLQuevedo"> REPO</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+  <div class = "container">
+    <div class="row">
+        <div class="col-lg-7 col-md-12">
+            <div class="box" style = "padding-bottom: 20px;">
+                <h3> SUMMARY AND PURPOSE </h3>
+                <hr>
+                <img src="assets/images/CityLatVsCloudiness_08_01_2022.png" class="visualization rounded float-left" alt="Latitude vs Cloudiness Graph" width = 250px height = 250px>
+                <p> For this project, we were tasked with analyzing the weather patterns of 500+ cities around the world based off the distance from the equator.
+                  To gather our data, citipy was used to gather a sufficiently large list of unique cities. We then used the OpenWeatherMap API to gather the current weather for each.
+                </p>
+                <br>
+                <p> Matpltlib was used to visualize the relationship between weather conditions and latitude. We compared latitude with temperature(C), wind speed(m/s), cloudiness and humidity.
+                  An analysis and description of the correlations are provided for each graph.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <div class="box">
+              <h3 class="title">VISUALIZATIONS</h3>
+              <hr>
+              <div class="container">
+                  <div class="row" style="padding-bottom: 70px;">
+                      <div class="col-6">
+                          <div class="title">Latitude vs. Cloudiness</div>
+                          <a href="visualizations/cloudiness.html">
+                          <img class="panel" src="assets/images/CityLatVsCloudiness_08_01_2022.png" alt="vs Cloudiness graph">
+                          </a>
+                      </div>
+                      <div class="col-6">
+                          <div class="title">Latitude vs. Humidity</div>
+                          <a href="visualizations/humidity.html">
+                          <img class="panel" src="assets/images/CityLatVsHumidity_08_01_2022.png" alt="vs Humidity Graph">
+                          </a>
+                      </div>
+                  </div>
+                  <div class="row" style="padding-bottom: 70px;">
+                      <div class="col-6">
+                          <div class="title">Latitude vs. Max Temp</div>
+                          <a href="visualizations/maxtemp.html">
+                          <img class="panel" src="assets/images/CityLatVsMaxTemp_08_01_2022.png" alt="vs Max Temp Graph">
+                          </a>
+                      </div>
+                      <div class="col-6">
+                          <div class="title">Latitude vs. Wind Speed</div>
+                          <a href="visualizations/windspeed.html">
+                              <img class="panel" src="assets/images/CityLatVsWindSpeed_08_01_2022.png" alt="vs Wind Speed Graph">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
