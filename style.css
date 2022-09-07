@@ -1,6 +1,6 @@
 body{
     background-image: url("https://3s81si1s5ygj3mzby34dq6qf-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/ab_multi-cloud.jpg");
-    height: 750px;
+    height: 1000px;
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
@@ -33,6 +33,10 @@ body{
     color: #8f8f89;
   }
 
+  .navbar-collapse{
+    float:right;
+  }
+
   .active, .dropdown-menu .dropdown-item:active, a:hover {
     background-color: orange;
     color: black;
@@ -41,13 +45,21 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+.dropdown-item {
+  color: #8f8f89;
+}
+
   .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
     background-color: orange;
   }
   
-  .nav-link:hover .navbar-brand:hover{
+  .nav-link:hover {
     background-color:orange;
   }
+  .navbar-brand:hover {
+    color: #8f8f89;
+  }
+
 
   .title{
     font-size: 20px;
@@ -70,7 +82,7 @@ body{
 
   @media(max-width: 992px) {
     .navbar-expand-lg {
-    background-color: orange;
+    background-color: bisque;
     }
     .navbar {
       max-height: none;
