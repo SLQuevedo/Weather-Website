@@ -1,7 +1,7 @@
 # Web-Design-Challenge
 
 # Opening Website
-On the project repository there is a box on the right that says "enviornments", click on "github-pages" to access the website. Alternatively, you can click this link here: https://slquevedo.github.io/Web-Design-Challenge/.
+On the project repository there is a box on the right that says "enviornments", click on "github-pages" to access the website. Alternatively, you can click this link here: https://slquevedo.github.io/Weather-Website/.
 
 # Purpose
 In this challenge we used OpenWeatherMaps API to gather weather data from 500+ cities. We then compared the cities' latitude to max temperature, wind speed, cloudiness and humidity to see if there was any correlation. More information about the methodology can be found here https://github.com/SLQuevedo/python-api-challenge. 
